@@ -59,20 +59,25 @@
 
 ## 架构
 
-```mermaid
-flowchart LR
-  subgraph UI["React 19 前端"]
-    A[对话 / Agent / 技能 / 设置] --> B[Zustand Store]
-  end
-  B <-->|Tauri IPC| C
-  subgraph Core["Rust 原生层 (Tauri 2)"]
-    C[IPC 路由 + 鉴权策略] --> D[Gateway Supervisor]
-    C --> E[SQLite 会话库]
-    C --> F[技能与工作区管理]
-    C --> G[文档 / OCR / 升级]
-  end
-  D <-->|WebSocket 127.0.0.1:18789| H[本地 Gateway 进程]
-  E --> I[(yuntuai.db)]
+```
+React 19 前端 ── 对话 / Agent 指挥中心 / 技能工坊 / 设置
+   │            Zustand Store 统一状态，GSAP 负责动效
+   │  Tauri IPC（invokeWithAuthRetry 自动续期）
+   ▼
+Rust 原生层（Tauri 2）
+   │
+   ├── ipc_auth_policy     每类调用的授权策略
+   ├── gateway_supervisor  网关生命周期：establish → healthy → degraded → reconnect
+   ├── db.rs               SQLite 会话与消息（含定时备份）
+   ├── skill_studio        技能生成、安装、同步
+   └── ocr / office_write / updater
+   │
+   │  WebSocket  127.0.0.1:18789
+   ▼
+本地 Gateway 进程 ── 模型调用、工具执行、会话编排
+   │
+   ▼
+yuntuai.db（会话、消息、审计）
 ```
 
 启动顺序是一致性设计的核心：**先起网关、过健康检查，主界面才解除遮罩**——避免用户进到一个"能点但后端还没就绪"的空壳界面。网关侧则用状态机管理 `establish → healthy → degraded → reconnect`，崩溃后自动拉起，不打断正在进行的会话。
