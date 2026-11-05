@@ -1,0 +1,20 @@
+# 默认所有文本文件用 LF，跨平台一致
+* text=auto eol=lf
+
+# Windows 脚本必须用 CRLF，PowerShell/批处理才不会因换行符报错
+*.ps1   text eol=crlf
+*.psm1  text eol=crlf
+*.psd1  text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# 二进制资源，禁止 git 做 EOL / diff 处理
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.icns  binary
+*.zip   binary
+*.exe   binary

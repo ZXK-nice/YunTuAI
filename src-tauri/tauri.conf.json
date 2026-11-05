@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "YunTu Control",
+  "version": "1.5.0",
+  "identifier": "com.yuntuai.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "node scripts/before-tauri-build.mjs",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "YunTu Control",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 640,
+        "decorations": false,
+        "backgroundColor": "#fafafa"
+      }
+    ],
+    "security": {
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPDATA/**",
+          "$LOCALDATA/**",
+          "$HOME/.yuntuai/**",
+          "$HOME/YunTuAI/**"
+        ]
+      },
+      "csp": "default-src 'self' ipc: http://ipc.localhost; img-src 'self' data: blob: asset: http://asset.localhost https://asset.localhost; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self' ipc: http://ipc.localhost ws: wss: http://127.0.0.1:* https://127.0.0.1:* http://localhost:* https://localhost:*; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "msi",
+      "dmg"
+    ],
+    "publisher": "深圳市浩瀚云图信息科技有限责任公司",
+    "copyright": "Copyright © 2026 深圳市浩瀚云图信息科技有限责任公司",
+    "category": "DeveloperTool",
+    "shortDescription": "云图AI桌面端控制系统",
+    "longDescription": "云图AI是一款面向本地AI代理网关架构的桌面控制中心软件，提供会话聊天、任务流水线、网关守护、技能工坊与循环改进等一站式AI交互管理能力。",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "webviewInstallMode": {
+        "type": "embedBootstrapper",
+        "silent": true
+      },
+      "wix": {
+        "template": "setup.wxs",
+        "upgradeCode": "614675b7-9f5b-5c61-976d-8bafa1bf0217",
+        "language": [
+          "zh-CN",
+          "en-US"
+        ]
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "12.0"
+    },
+    "resources": {
+      "bundled/support/": "bundled/support/",
+      "bundled/tesseract/": "bundled/tesseract/"
+    }
+  }
+}

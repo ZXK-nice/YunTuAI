@@ -1,0 +1,7 @@
+/** 办公/视觉/OCR 附件上限（前后端与 Rust 对齐，修改时同步 chat_files.rs / ocr.rs）。 */
+export const MAX_ATTACHMENT_UPLOAD_BYTES = 48 * 1024 * 1024;
+export const MAX_OFFICE_INLINE_IMAGE_BYTES = 8 * 1024 * 1024;
+export const MAX_VISION_INLINE_BYTES = MAX_OFFICE_INLINE_IMAGE_BYTES;
+export const MAX_OFFICE_EXTRACT_IMAGES = 12;
+export const MAX_VISION_ATTACHMENTS_PER_SEND = MAX_OFFICE_EXTRACT_IMAGES;
+export const MAX_OCR_IMAGES_PER_BATCH = 16;

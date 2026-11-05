@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo-light.png" id="app-favicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YunTu Control</title>
+    <script>
+      (function () {
+        var theme = "light";
+        try {
+          var stored = localStorage.getItem("yuntuai-color-scheme");
+          if (stored === "dark" || stored === "light") theme = stored;
+        } catch (e) {}
+        var bg = theme === "dark" ? "#0a0a0a" : "#fafafa"; /* sync: src/lib/theme.ts THEME_APP_BG + index.css --bg-app */
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.background = bg;
+        document.documentElement.style.colorScheme = theme;
+        var favicon = document.getElementById("app-favicon");
+        if (favicon) favicon.setAttribute("href", theme === "dark" ? "/logo-dark.png" : "/logo-light.png");
+      })();
+    </script>
+    <style>
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+        background: #fafafa;
+      }
+      html[data-theme="dark"], html[data-theme="dark"] body, html[data-theme="dark"] #root {
+        background: #0a0a0a;
+      }
+      /* 首帧静态启动屏：JS 未加载前即显示动画，避免白屏/假死感 */
+      #boot-splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        gap: 1.25rem;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        color: #525252;
+      }
+      html[data-theme="dark"] #boot-splash { color: #a3a3a3; }
+      #boot-splash-ring {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 9999px;
+        border: 2px solid color-mix(in oklab, #6366f1 35%, transparent);
+        border-top-color: #6366f1;
+        animation: boot-spin 0.9s linear infinite;
+      }
+      @keyframes boot-spin { to { transform: rotate(360deg); } }
+      #boot-splash-text {
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        animation: boot-pulse 2s ease-in-out infinite;
+      }
+      @keyframes boot-pulse {
+        0%, 100% { opacity: 0.55; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="boot-splash" role="status" aria-live="polite" aria-busy="true">
+        <div id="boot-splash-ring" aria-hidden="true"></div>
+        <p id="boot-splash-text">正在启动…</p>
+      </div>
+    </div>
+    <!-- 纯浏览器访问时显示友好提示（不阻塞 React 加载，仅预填充 #root 内联内容） -->
+    <script>
+      (function () {
+        function bootFail(msg) {
+          var el = document.getElementById("boot-splash-text");
+          if (el) el.textContent = msg;
+        }
+        window.addEventListener("error", function (e) {
+          if (document.getElementById("boot-splash")) {
+            bootFail("界面加载失败：" + (e.message || "未知错误"));
+          }
+        });
+        window.addEventListener("unhandledrejection", function (e) {
+          if (!document.getElementById("boot-splash")) return;
+          var r = e.reason;
+          bootFail("界面加载失败：" + (r && r.message ? r.message : String(r)).slice(0, 120));
+        });
+        setTimeout(function () {
+          if (document.getElementById("boot-splash")) {
+            bootFail("界面加载超时，请完全退出后重装或联系支持。");
+          }
+        }, 30000);
+      })();
+    </script>
+    <script>
+      (function () {
+        if (!window.__TAURI_INTERNALS__) {
+          document.getElementById("root").innerHTML =
+            '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;' +
+            'padding:24px;box-sizing:border-box;font-family:system-ui,sans-serif;background:#f7f7f8;color:#171717">' +
+            '<div style="text-align:center;max-width:480px">' +
+            '<h1 style="font-size:24px;margin:0 0 16px">YunTuAI</h1>' +
+            '<p style="margin:0 0 8px;color:#525252;font-size:15px;line-height:1.6">' +
+            '这是一款桌面应用，请通过 <strong>YunTuAI.exe</strong> 启动。</p>' +
+            '<p style="font-size:13px;color:#a3a3a3;margin:20px 0 0;line-height:1.7">' +
+            '如为开发调试，请访问 <code style="background:#e5e7eb;padding:1px 5px;border-radius:3px">http://localhost:1420</code><br>' +
+            '（部分功能仅桌面端可用）</p></div></div>';
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

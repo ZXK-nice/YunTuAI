@@ -1,0 +1,71 @@
+[package]
+name = "tauri-app"
+version = "1.5.0"
+description = "YunTuAI desktop gateway client"
+authors = ["YunTuAI"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "tauri_app_lib"
+# 桌面 release 静态链接 rlib；不产出 cdylib，避免运维误部署「exe 缺 dll」。
+crate-type = ["staticlib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+serde_json = "1"
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset", "tray-icon", "image-png"] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dirs = "5"
+rusqlite = { version = "0.32", features = ["bundled", "backup"] }
+uuid = { version = "1.11", features = ["v4"] }
+bcrypt = "0.16"
+sha2 = "0.10"
+hex = "0.4"
+rand = "0.8"
+hostname = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+ureq = { version = "2.10", default-features = false, features = ["tls"] }
+base64 = "0.22"
+aes-gcm = "0.10"
+pdf-extract = "0.7"
+lopdf = "0.34"
+rayon = "1.10"
+calamine = { version = "0.26", optional = true }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "bmp", "webp"] }
+rfd = "0.15"
+tauri-plugin-autostart = "2"
+tauri-plugin-single-instance = "2"
+
+[target.'cfg(target_arch = "x86_64")'.dependencies]
+raw-cpuid = "11"
+
+[target.'cfg(target_arch = "x86")'.dependencies]
+raw-cpuid = "11"
+
+# 安装包二进制大小优化（仅影响 release 构建，不影响 dev）。
+# 实测可把 Windows release exe 减小 30%+，安装包整体显著缩水。
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "unwind"
+strip = "symbols"
+incremental = false
+
+# release / 安装包必须嵌入 dist（custom-protocol）；`tauri dev` 会用 --no-default-features 走 Vite。
+[features]
+default = ["custom-protocol", "xls"]
+custom-protocol = ["tauri/custom-protocol"]
+xls = ["dep:calamine"]
+
+

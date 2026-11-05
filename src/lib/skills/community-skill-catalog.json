@@ -1,0 +1,922 @@
+{
+  "packId": "yuntuai-community-skill-pack",
+  "packLabel": "云图社区技能包",
+  "version": 1,
+  "skillCount": 68,
+  "categories": [
+    {
+      "id": "cat-9ef94726f3",
+      "label": "视频创作",
+      "skills": [
+        {
+          "dirName": "digital-avatar-shopping-video",
+          "name": "digital-avatar-shopping-video",
+          "description": "小省导购员多智能体数字人口播带货视频生成系统，以\"小省导购员\"为核心人设，打造专业购物助手+数字人口播带货视频一体化服务。涵盖五大智能体（小省导购员、带货脚本师、数字人口播生成师、带货画面设计师、音画合成师），产出\"数字人口播+带货画面+字幕音效\"的成品视频，适配抖音、快手等短视频平台，支持淘宝、京东、拼多多、唯品会等全平台商品信息，具备知识库自动存取能力。",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "dream-video-prompt-generator",
+          "name": "dream-video-prompt-generator",
+          "description": "小省导购员数字人带货版即梦视频提示词生成系统，基于四大智能体协同（提示词生成师、质量管控师、知识库运维师、跨环节适配师），按照\"主体+运动+场景+（镜头语言+光影+氛围）\"公式输出中英文双版提示词，适配5s短视频。确保人物一致性、视觉连贯性、情绪连贯性，支持知识库智能复用和跨工具适配（Suno音乐、AI绘画），为数字人带货视频提供高质量提示词生成服务。",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "ecommerce-video-marketing",
+          "name": "ecommerce-video-marketing",
+          "description": "电商视频营销创作技能，支持多品类商品的营销视频脚本生成，包含6阶段创作流程、智能体提示词框架、8种商品类型模板，适用于电商平台、社交媒体、品牌推广",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "historical-interview-scripts",
+          "name": "historical-interview-scripts",
+          "description": "生成历史名人现代访谈短视频文案，通过古今反差与网络热梗的爆笑结合，创作具有传播力的虚构趣味内容",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "historical-science-video-prod",
+          "name": "historical-science-video-prod",
+          "description": "自动化生成历史科学类3分钟科普短视频的全流程素材包，包含口播文案、分镜脚本、Veo2提示词、人物形象规范等，适配即梦平台视频生成。",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "infinitetalk",
+          "name": "infinitetalk",
+          "description": "音频驱动的稀疏帧视频配音工具，支持音频驱动的 Video-to-Video 和 Image-to-Video 生成，实现精准的唇形、头部、身体姿态同步，支持无限时长视频生成",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "infinitetalk-shopping-avatar",
+          "name": "infinitetalk-shopping-avatar",
+          "description": "专为InfiniteTalk项目设计的小省导购员数字人带货提示词生成技能，基于四大智能体协同（提示词生成师、质量管控师、知识库运维师、跨环节适配师），生成适配Image-to-Video模式的结构化提示词（角色固定特征+动作时序+场景环境+音频匹配+光影氛围+技术约束），支持9:16竖屏、5s/幕、音频同步（Suno+chinese-wav2vec2-base）、一致性管控（角色/视觉/情绪），直接对接模型推理流程",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "product-video-creator",
+          "name": "product-video-creator",
+          "description": "多智能体协同的商品视频创作流水线，支持从商品信息到成视频的全流程创作：文案生成、故事策划、脚本创作、分镜设计、图片生成、字幕创作、音效推荐及视频合成；适用于电商商品宣传、品牌推广、社交媒体营销等场景",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "remotion-video-enhancer",
+          "name": "remotion-video-enhancer",
+          "description": "视频转场与动画增强工具，提取 Remotion 的动画理念，提供高级视频转场效果和 Framer Motion 交互式动画。可与 ppt-generator、nanobanana-ppt-visualizer、ppt-roadshow-generator Skill 协同工作。",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "three-body-video-creator",
+          "name": "three-body-video-creator",
+          "description": "《三体》赛道AI视频创作工具,提供结构化的多智能体协作流程、素材生成与视频合成,涵盖选题深化、视觉设计、音频生成、视频制作全流程",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-creation-collaborator",
+          "name": "video-creation-collaborator",
+          "description": "影品智创多智能体协同视频创作管理工具,提供11个智能体结构化分工、5阶段协同流程、质量管控标准与数据反馈机制,解决生图失真、视频合成瑕疵等问题,确保输出统一可控",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-creation-pro",
+          "name": "video-creation-pro",
+          "description": "10大智能体协同的商品视频创作系统，全流程质量闭环（创作→质检→反馈迭代），强制使用COZE视频大模型API进行视频合成，彻底移除本地依赖包逻辑，适用于智能硬件、美妆护肤、家居家电等多品类商品视频创作",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-creation-suite",
+          "name": "video-creation-suite",
+          "description": "完整的视频创作套件，支持原创创作、视频二创、视频分析三种模式，集成Coze Bot API、Edge-TTS、Suno API，涵盖多智能体协同、素材生成、视频合成全流程",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-frame-extractor",
+          "name": "video-frame-extractor",
+          "description": "视频反推工具,支持视频抽帧、视觉模型分析、提示词生成,适用于视频创作参考、内容提取、场景分析",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-recreation",
+          "name": "video-recreation",
+          "description": "完整的视频二创工具，支持视频反推、素材生成(图片/音效/背景音乐/配音/字幕)、视频合成、文件下载的全流程，集成Coze Bot API进行视觉分析，使用Edge-TTS进行语音合成",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "video-transcript-downloader",
+          "name": "video-transcript-downloader",
+          "description": "从 YouTube 及 yt-dlp 支持的其他站点下载视频、音频、字幕与分段正文稿。适用于「下载这个视频」「保存片段」「提取音频」「获取字幕/文稿」，或排查 yt-dlp/ffmpeg 格式与播放列表问题。",
+          "category": "视频创作"
+        },
+        {
+          "dirName": "viral-video-copywriting",
+          "name": "viral-video-copywriting",
+          "description": "专业的爆款短视频文案创作工具。通过对标抖音爆款视频，智能提取视频内容，深度拆解爆款因素，并结合用户需求创作出符合爆款规律的新文案。适用于短视频创作者、运营人员提升内容质量。",
+          "category": "视频创作"
+        }
+      ]
+    },
+    {
+      "id": "cat-6e36126f99",
+      "label": "内容创作与发布",
+      "skills": [
+        {
+          "dirName": "article-illustrator",
+          "name": "article-illustrator",
+          "description": "分析文章内容，在需要视觉辅助理解的位置生成插画。配图可以是信息补充、概念具象化，或引导读者想象。当用户要求\"给文章配图\"、\"为文章生成插图\"、\"添加配图\"时使用此技能。",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "content-creation-publisher",
+          "name": "content-creation-publisher",
+          "description": "内容创作与发布全流程技能，整合网页采集、Markdown格式化、智能配图、多平台发布（微信公众号、X/Twitter）功能，实现从内容获取到发布的一站式解决方案",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "content-research-writer",
+          "name": "content-research-writer",
+          "description": "辅助撰写高质量内容：开展调研、补充引用、优化开篇钩子、迭代大纲，并对每个章节提供实时反馈，将写作从单人苦撑变为协作式创作流程。",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "ecommerce-copywriter",
+          "name": "ecommerce-copywriter",
+          "description": "电商图片文案创作技能，支持多品类产品的吸引性文案生成，适用于电商平台的商品营销推广",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "intelligent-content-system",
+          "name": "intelligent-content-system",
+          "description": "智能内容创作与发布全流程系统。根据用户需求自动识别场景， 编排调用网页采集、智能配图、小红书图文生成、热点内容创作、多平台发布等技能， 实现从内容获取到发布的一站式自动化。 支持场景： - 网页内容采集与再创作（采集→配图→发布） - 热点内容创作（热点采集→AI生成→多平台发布） - 原创内容优化（配图→小红书图文→发布） - 单一功能调用（采集/配图/图文/发布） 支持平台：微信公众号、小红书、X/Twitter、B站",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "obsidian-skills-integrated",
+          "name": "obsidian-skills-integrated",
+          "description": "Obsidian 笔记技能整合包，覆盖笔记整理、知识库构建与 Markdown 工作流，适用于个人知识管理与研报归档。",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "product-marketing-copywriter",
+          "name": "product-marketing-copywriter",
+          "description": "产品营销文案创作技能，支持多品类产品的吸引性营销文案生成，适用于产品推广、品牌营销、销售转化",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "qiaomu-x-article-publisher",
+          "name": "x-article-publisher",
+          "description": "将 Markdown 文章发布到 X（Twitter）Articles 编辑器并保持格式。适用于用户说「发到 X」「Twitter 长文」「X 文章」或需要 X Premium 文章发布、封面图处理时。",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "wechat-hotspot-publisher",
+          "name": "wechat-hotspot-publisher",
+          "description": "智能采集热点话题，10分制筛选优质选题，AI生成爆款内容（标题/封面/标签/图片/HTML排版），支持素材上传和草稿箱发布，一键发布到微信公众号、小红书、B站等多平台",
+          "category": "内容创作与发布"
+        },
+        {
+          "dirName": "wechatsync-publisher",
+          "name": "wechatsync-publisher",
+          "description": "多平台内容发布助手，支持智能选题筛选、AI生成优质内容、一键发布到微信公众号等平台；支持内容格式自动适配（HTML/Markdown/纯文本）",
+          "category": "内容创作与发布"
+        }
+      ]
+    },
+    {
+      "id": "ppt",
+      "label": "PPT与演示",
+      "skills": [
+        {
+          "dirName": "nanobanana-ppt-visualizer",
+          "name": "nanobanana-ppt-visualizer",
+          "description": "PPT 视觉增强工具，支持多种风格渲染、交互式播放器生成和视频合成。可与 ppt-generator Skill 协同工作，实现从内容规划到视觉呈现的完整流程。",
+          "category": "PPT与演示"
+        },
+        {
+          "dirName": "paper-analysis-assistant",
+          "name": "paper-analysis-assistant",
+          "description": "根据arXiv论文网址自动下载PDF并进行多维度分析，包括文本提取、词频分析、语音播报、播客对话生成、交互式网页、PPT、总结图和引用分析",
+          "category": "PPT与演示"
+        },
+        {
+          "dirName": "ppt-generator",
+          "name": "ppt-generator",
+          "description": "基于七角色协作的智能 PPT 生成与优化工具。支持主题生成、模板推荐、内容填充、AI 智能配图、文本润色和 PPTX 文件生成。适用于学术汇报、商业演示、培训课件、产品发布等多种场景。",
+          "category": "PPT与演示"
+        },
+        {
+          "dirName": "ppt-roadshow-generator",
+          "name": "ppt-roadshow-generator",
+          "description": "PPT 路演视频全流程生成器，支持品牌风格学习、智能配音、音效音乐、字幕和一键视频合成。可一次性生成 15-100 页风格统一的完整路演视频。",
+          "category": "PPT与演示"
+        },
+        {
+          "dirName": "pptx-generator",
+          "name": "pptx-generator",
+          "description": "将 JSON 格式的 PPT 内容转换为标准的 .pptx 文件。使用 python-pptx 库，支持多种布局、图表、表格和样式。与 ppt-generator Skill 完全协同，可作为独立使用或与其他 PPT Skill 配合。",
+          "category": "PPT与演示"
+        }
+      ]
+    },
+    {
+      "id": "cat-cf926f3951",
+      "label": "其他技能",
+      "skills": [
+        {
+          "dirName": "icon-generator",
+          "name": "icon-generator",
+          "description": "图标生成工具，根据描述或场景生成可用的图标素材，适用于产品界面、品牌与营销物料。",
+          "category": "其他技能"
+        },
+        {
+          "dirName": "media-processor",
+          "name": "media-processor",
+          "description": "提供基于 FFmpeg 和 ImageMagick 的多媒体处理能力，支持视频和图像的格式转换、分辨率调整、压缩等操作",
+          "category": "其他技能"
+        },
+        {
+          "dirName": "pdf-processing-pro",
+          "name": "PDF Processing Pro",
+          "description": "生产级 PDF 处理：表单、表格、OCR、校验与批量操作。适用于复杂 PDF 流水线、大批量文档处理，以及需要稳健错误处理与校验的场景。",
+          "category": "其他技能"
+        },
+        {
+          "dirName": "tailored-resume-generator",
+          "name": "tailored-resume-generator",
+          "description": "分析岗位描述并生成定制简历，突出匹配经历、技能与成果，提高获得面试机会的概率。",
+          "category": "其他技能"
+        },
+        {
+          "dirName": "web-design-analyzer",
+          "name": "web-design-analyzer",
+          "description": "分析网页截图，提取设计系统（Design System）并生成结构化数据和可用的 AI Coding Prompt。适用于 UI/UX 设计师和前端工程师需要从现有网页设计中提取设计规范、配色方案、排版系统和组件风格的场景。",
+          "category": "其他技能"
+        }
+      ]
+    },
+    {
+      "id": "cat-87253e16dc",
+      "label": "智能体协作",
+      "skills": [
+        {
+          "dirName": "agent-team",
+          "name": "agent-team",
+          "description": "统一管理多智能体角色的团队协作框架，支持智能体动态组合、灵活协作和扩展新角色。智能体本质上是\"角色定义\"，可以根据任务需求灵活组建团队，实现从会议决策到系统构建的完整能力。智能体角色明确分工：有干活的、有指挥的、有挑毛病的，能实时看到沟通过程，共享数据库记忆，确保上下文一致。",
+          "category": "智能体协作"
+        },
+        {
+          "dirName": "moltbook",
+          "name": "moltbook",
+          "description": "AI Agent的社交网络. 发布帖子、评论、点赞和创建社区。当用户明确要求时才会使用，否则不会使用。",
+          "category": "智能体协作"
+        },
+        {
+          "dirName": "multi-agent-meeting",
+          "name": "multi-agent-meeting",
+          "description": "模拟多个AI智能体协作开会并进行决策讨论的场景。适用于需要从多个专业角度分析问题、进行辩论和达成共识的场景，如项目决策、技术方案评审、商业策略制定等。",
+          "category": "智能体协作"
+        }
+      ]
+    },
+    {
+      "id": "cat-d61b2dc050",
+      "label": "生活与创意",
+      "skills": [
+        {
+          "dirName": "bedtime-story",
+          "name": "bedtime-story",
+          "description": "为3-12岁儿童提供温馨亲切的睡前寓言故事和成语典故讲解。支持用户唤醒后提供故事列表选择，或直接讲解指定故事/成语。讲解时保持亲切温馨的语气、0.6倍正常语速、通俗易懂的表达，为小朋友营造舒适的睡前氛围。",
+          "category": "生活与创意"
+        },
+        {
+          "dirName": "poetry-music-visual",
+          "name": "poetry-music-visual",
+          "description": "为古诗词提供配图与配乐的全流程创作指导；支持深度解析诗词意境、生成画面描述、提供配乐创作蓝图（Suno格式）；适用于诗词可视化、MV创作、文化传播等场景",
+          "category": "生活与创意"
+        },
+        {
+          "dirName": "pop-up-book-illustration",
+          "name": "pop-up-book-illustration",
+          "description": "生成3D纸艺弹出书风格插画，具备立体层次感、明亮温暖色调，适用于科技、教育、品牌展示等场景",
+          "category": "生活与创意"
+        }
+      ]
+    },
+    {
+      "id": "cat-bdd1e8228b",
+      "label": "电商与营销",
+      "skills": [
+        {
+          "dirName": "agentkit-multimedia-shopping",
+          "name": "agentkit-multimedia-shopping",
+          "description": "基于ByteDance agentkit-samples多媒体用例的小省导购员数字人带货视频生成技能，整合多模态内容生成能力（图像、视频、音频），支持AI绘画、语音合成、视频生成，与小省导购员人设融合，9:16竖屏适配，直接对接带货视频生成流程",
+          "category": "电商与营销"
+        },
+        {
+          "dirName": "pet-commerce-creator",
+          "name": "pet-commerce-creator",
+          "description": "萌宠带货短视频全流程创作技能，基于COZE视频大模型API，支持萌宠剧情/好物测评/品种科普/宠品带货等全类型创作，覆盖爆款解析反推、知识库联动、互动优化、素材批量下载、全素材整合，实现从创意到带货引流型成品视频的自动化生成，适配15-30秒竖屏9:16主流平台规格。",
+          "category": "电商与营销"
+        },
+        {
+          "dirName": "xiaohongshu-makeup",
+          "name": "xiaohongshu-makeup",
+          "description": "小红书美妆内容创作技能，支持笔记生成、笔记优化、文生图描述创作；适用于美妆护肤产品的内容创作、测评和营销推广",
+          "category": "电商与营销"
+        }
+      ]
+    },
+    {
+      "id": "cat-066391e94e",
+      "label": "语音与音频",
+      "skills": [
+        {
+          "dirName": "qwen3-asr-assistant",
+          "name": "qwen3-asr-assistant",
+          "description": "智能语音转文字助手，基于 Qwen3-ASR 模型，支持实时语音识别和智能文本改写。可以将录音转换为文字，并一键改写成邮件、笔记、社交媒体文案，支持复制、分享和录音拼接。适用于会议纪要、语音备忘、内容创作等多种场景。",
+          "category": "语音与音频"
+        },
+        {
+          "dirName": "qwen3-tts-local",
+          "name": "qwen3-tts-local",
+          "description": "真正的本地语音合成服务，使用 Edge-TTS 引擎，零依赖、零配置、完全离线可用，支持多语言和多种音色",
+          "category": "语音与音频"
+        },
+        {
+          "dirName": "tts-voice-synthesis",
+          "name": "tts-voice-synthesis",
+          "description": "智能语音合成服务，支持音色克隆、拟人化语义适配配音、流式实时生成、多语言与方言支持，提供 1.7B/0.6B 双模型选择",
+          "category": "语音与音频"
+        }
+      ]
+    },
+    {
+      "id": "cat-3229e3c357",
+      "label": "产品与办公",
+      "skills": [
+        {
+          "dirName": "frontend-design",
+          "name": "frontend-design",
+          "description": "打造有辨识度、可投产的前端界面，强调高设计品质。适用于构建 Web 组件、页面或应用，生成精致代码并避免千篇一律的「AI 审美」。",
+          "category": "产品与办公"
+        },
+        {
+          "dirName": "product-manager-toolkit",
+          "name": "product-manager-toolkit",
+          "description": "产品经理综合工具包：RICE 优先级、用户访谈分析、PRD 模板、发现框架与 GTM 策略。适用于功能排期、用户研究归纳、需求文档与产品战略规划。",
+          "category": "产品与办公"
+        }
+      ]
+    },
+    {
+      "id": "cat-bdfccf3b9a",
+      "label": "自动化工具",
+      "skills": [
+        {
+          "dirName": "browser-use",
+          "name": "browser-use",
+          "description": "持久化浏览器自动化 CLI：打开网页、按元素索引点击填表、截图与数据提取，适合重复性网页操作。",
+          "category": "自动化工具"
+        },
+        {
+          "dirName": "chrome-automation",
+          "name": "chrome-automation",
+          "description": "通过 agent-browser 与 CDP（Chrome 开发者工具协议）连接并控制 Google Chrome。适用于自动化操作已有浏览器、实时查看页面动作，或控制用户正在使用的 Chrome 实例；包含安装与连通性排查。",
+          "category": "自动化工具"
+        },
+        {
+          "dirName": "desktop-control",
+          "name": "desktop-control",
+          "description": "Windows 桌面自动化：全屏/区域截图、鼠标点击移动、键盘输入与热键、屏幕图像定位点击（pyautogui + mss）。",
+          "category": "自动化工具"
+        },
+        {
+          "dirName": "scrapling",
+          "name": "scrapling",
+          "description": "Scrapling 网页抓取：静态页 HTTP、JS 渲染、反爬与 Cloudflare 绕过；首次使用需联网 pip install 与浏览器组件下载（不随安装包内置）。",
+          "category": "自动化工具"
+        },
+        {
+          "dirName": "web-to-app",
+          "name": "web-to-app",
+          "description": "将任意网页转换为桌面应用，支持 macOS/Windows/Linux 三大平台。使用 Rust + Tauri 技术栈，生成的应用体积小（约 5MB）、性能高。支持自定义图标、窗口大小、快捷键等丰富配置。",
+          "category": "自动化工具"
+        }
+      ]
+    },
+    {
+      "id": "cat-4c627fe0b5",
+      "label": "数据与可视化",
+      "skills": [
+        {
+          "dirName": "data-storytelling",
+          "name": "data-storytelling",
+          "description": "将数据转化为有说服力的叙事，结合可视化、背景语境与论证结构。适用于向干系人汇报分析结果、撰写数据报告或制作高管演示材料。",
+          "category": "数据与可视化"
+        }
+      ]
+    },
+    {
+      "id": "cat-d82e7fb532",
+      "label": "法务与文档",
+      "skills": [
+        {
+          "dirName": "bilingual-pdf-translation",
+          "name": "bilingual-pdf-translation",
+          "description": "技术规格 PDF 英→中双语对照排版，保留表格与编号结构，适合工程标准与 MABE 类文档。",
+          "category": "法务与文档"
+        },
+        {
+          "dirName": "legal-assistant-skills-main",
+          "name": "contract-review",
+          "description": "合同审阅技能：在不改动原文的前提下以批注形式标注问题，执行基础/商务/法律三层审查，输出结构化批注（问题类型、风险原因、修改建议），并以审阅者名称编码风险等级，可生成审查报告。",
+          "category": "法务与文档"
+        },
+        {
+          "dirName": "paper-to-patent",
+          "name": "paper-to-patent",
+          "description": "将科研论文、学位论文、技术报告与源代码整理为可追溯的中国发明专利初稿：建立证据台账、生成权利要求书/说明书/摘要与附图，输出 Word 可编辑公式与 DOCX 交付件（需代理师复核，非法律意见）。",
+          "category": "法务与文档"
+        }
+      ]
+    },
+    {
+      "id": "cat-79b820cb02",
+      "label": "财务与投研",
+      "skills": [
+        {
+          "dirName": "stock-analysis",
+          "name": "stock-analysis",
+          "description": "股票个股分析，实时获取价格涨跌幅，计算技术指标和支撑位，识别缺口并判断支撑压力，智能预测未来3天走势并给出操作建议",
+          "category": "财务与投研"
+        }
+      ]
+    },
+    {
+      "id": "cat-20f414e88a",
+      "label": "学术写作与润色",
+      "skills": [
+        {
+          "dirName": "anti-vibe-writing",
+          "name": "anti-vibe-writing",
+          "description": "去除 AI 生成腔的中英文润色：社媒帖、博客、产品文案、技术备忘录等，保留原意、去除模板化表达与排版痕迹。",
+          "category": "学术写作与润色"
+        },
+        {
+          "dirName": "scipilot-cite",
+          "name": "scipilot-cite-skill",
+          "description": "SciPilot 文献引用技能：检索论文、按 APA/IEEE/GB-T 7714 等格式排版引用，插入 LaTeX/DOCX，并做防幻觉校验。",
+          "category": "学术写作与润色"
+        },
+        {
+          "dirName": "scipilot-writing",
+          "name": "scipilot-writing-skill",
+          "description": "SciPilot 学术论文写作与润色：中英互译、章节起草、逻辑检查、去 AI 味；交付前运行 writing_lint 机器自检 + 审稿人视角复核。",
+          "category": "学术写作与润色"
+        }
+      ]
+    },
+    {
+      "id": "cat-bdd7508731",
+      "label": "技能开发",
+      "skills": [
+        {
+          "dirName": "full-output-enforcement",
+          "name": "full-output-enforcement",
+          "description": "抑制模型截断与占位符输出，长文档与代码生成任务强制完整交付。",
+          "category": "技能开发"
+        },
+        {
+          "dirName": "skill-development",
+          "name": "skill-development",
+          "description": "Anthropic 官方技能开发指南：SKILL.md 结构、描述优化、references/scripts 组织与插件集成。",
+          "category": "技能开发"
+        },
+        {
+          "dirName": "skills-best-practices",
+          "name": "skill-creator",
+          "description": "按 agentskills.io 规范撰写高质量 Agent 技能：元数据校验、目录结构、渐进式披露与脚本捆绑。",
+          "category": "技能开发"
+        }
+      ]
+    },
+    {
+      "id": "cat-d2d0ba68d1",
+      "label": "企业数据与背调",
+      "skills": [
+        {
+          "dirName": "tyc-it",
+          "name": "tyc-it",
+          "description": "天眼查「天眼一下」企业数据：主体画像、股权实控、司法风险、经营真实性、知识产权与关联关系；需先安装 tyc-cli 并配置 API Key。",
+          "category": "企业数据与背调"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "dirName": "agent-team",
+      "name": "agent-team",
+      "description": "统一管理多智能体角色的团队协作框架，支持智能体动态组合、灵活协作和扩展新角色。智能体本质上是\"角色定义\"，可以根据任务需求灵活组建团队，实现从会议决策到系统构建的完整能力。智能体角色明确分工：有干活的、有指挥的、有挑毛病的，能实时看到沟通过程，共享数据库记忆，确保上下文一致。",
+      "category": "智能体协作"
+    },
+    {
+      "dirName": "agentkit-multimedia-shopping",
+      "name": "agentkit-multimedia-shopping",
+      "description": "基于ByteDance agentkit-samples多媒体用例的小省导购员数字人带货视频生成技能，整合多模态内容生成能力（图像、视频、音频），支持AI绘画、语音合成、视频生成，与小省导购员人设融合，9:16竖屏适配，直接对接带货视频生成流程",
+      "category": "电商与营销"
+    },
+    {
+      "dirName": "anti-vibe-writing",
+      "name": "anti-vibe-writing",
+      "description": "去除 AI 生成腔的中英文润色：社媒帖、博客、产品文案、技术备忘录等，保留原意、去除模板化表达与排版痕迹。",
+      "category": "学术写作与润色"
+    },
+    {
+      "dirName": "article-illustrator",
+      "name": "article-illustrator",
+      "description": "分析文章内容，在需要视觉辅助理解的位置生成插画。配图可以是信息补充、概念具象化，或引导读者想象。当用户要求\"给文章配图\"、\"为文章生成插图\"、\"添加配图\"时使用此技能。",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "bedtime-story",
+      "name": "bedtime-story",
+      "description": "为3-12岁儿童提供温馨亲切的睡前寓言故事和成语典故讲解。支持用户唤醒后提供故事列表选择，或直接讲解指定故事/成语。讲解时保持亲切温馨的语气、0.6倍正常语速、通俗易懂的表达，为小朋友营造舒适的睡前氛围。",
+      "category": "生活与创意"
+    },
+    {
+      "dirName": "bilingual-pdf-translation",
+      "name": "bilingual-pdf-translation",
+      "description": "技术规格 PDF 英→中双语对照排版，保留表格与编号结构，适合工程标准与 MABE 类文档。",
+      "category": "法务与文档"
+    },
+    {
+      "dirName": "browser-use",
+      "name": "browser-use",
+      "description": "持久化浏览器自动化 CLI：打开网页、按元素索引点击填表、截图与数据提取，适合重复性网页操作。",
+      "category": "自动化工具"
+    },
+    {
+      "dirName": "chrome-automation",
+      "name": "chrome-automation",
+      "description": "通过 agent-browser 与 CDP（Chrome 开发者工具协议）连接并控制 Google Chrome。适用于自动化操作已有浏览器、实时查看页面动作，或控制用户正在使用的 Chrome 实例；包含安装与连通性排查。",
+      "category": "自动化工具"
+    },
+    {
+      "dirName": "content-creation-publisher",
+      "name": "content-creation-publisher",
+      "description": "内容创作与发布全流程技能，整合网页采集、Markdown格式化、智能配图、多平台发布（微信公众号、X/Twitter）功能，实现从内容获取到发布的一站式解决方案",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "content-research-writer",
+      "name": "content-research-writer",
+      "description": "辅助撰写高质量内容：开展调研、补充引用、优化开篇钩子、迭代大纲，并对每个章节提供实时反馈，将写作从单人苦撑变为协作式创作流程。",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "data-storytelling",
+      "name": "data-storytelling",
+      "description": "将数据转化为有说服力的叙事，结合可视化、背景语境与论证结构。适用于向干系人汇报分析结果、撰写数据报告或制作高管演示材料。",
+      "category": "数据与可视化"
+    },
+    {
+      "dirName": "desktop-control",
+      "name": "desktop-control",
+      "description": "Windows 桌面自动化：全屏/区域截图、鼠标点击移动、键盘输入与热键、屏幕图像定位点击（pyautogui + mss）。",
+      "category": "自动化工具"
+    },
+    {
+      "dirName": "digital-avatar-shopping-video",
+      "name": "digital-avatar-shopping-video",
+      "description": "小省导购员多智能体数字人口播带货视频生成系统，以\"小省导购员\"为核心人设，打造专业购物助手+数字人口播带货视频一体化服务。涵盖五大智能体（小省导购员、带货脚本师、数字人口播生成师、带货画面设计师、音画合成师），产出\"数字人口播+带货画面+字幕音效\"的成品视频，适配抖音、快手等短视频平台，支持淘宝、京东、拼多多、唯品会等全平台商品信息，具备知识库自动存取能力。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "dream-video-prompt-generator",
+      "name": "dream-video-prompt-generator",
+      "description": "小省导购员数字人带货版即梦视频提示词生成系统，基于四大智能体协同（提示词生成师、质量管控师、知识库运维师、跨环节适配师），按照\"主体+运动+场景+（镜头语言+光影+氛围）\"公式输出中英文双版提示词，适配5s短视频。确保人物一致性、视觉连贯性、情绪连贯性，支持知识库智能复用和跨工具适配（Suno音乐、AI绘画），为数字人带货视频提供高质量提示词生成服务。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "ecommerce-copywriter",
+      "name": "ecommerce-copywriter",
+      "description": "电商图片文案创作技能，支持多品类产品的吸引性文案生成，适用于电商平台的商品营销推广",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "ecommerce-video-marketing",
+      "name": "ecommerce-video-marketing",
+      "description": "电商视频营销创作技能，支持多品类商品的营销视频脚本生成，包含6阶段创作流程、智能体提示词框架、8种商品类型模板，适用于电商平台、社交媒体、品牌推广",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "frontend-design",
+      "name": "frontend-design",
+      "description": "打造有辨识度、可投产的前端界面，强调高设计品质。适用于构建 Web 组件、页面或应用，生成精致代码并避免千篇一律的「AI 审美」。",
+      "category": "产品与办公"
+    },
+    {
+      "dirName": "full-output-enforcement",
+      "name": "full-output-enforcement",
+      "description": "抑制模型截断与占位符输出，长文档与代码生成任务强制完整交付。",
+      "category": "技能开发"
+    },
+    {
+      "dirName": "historical-interview-scripts",
+      "name": "historical-interview-scripts",
+      "description": "生成历史名人现代访谈短视频文案，通过古今反差与网络热梗的爆笑结合，创作具有传播力的虚构趣味内容",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "historical-science-video-prod",
+      "name": "historical-science-video-prod",
+      "description": "自动化生成历史科学类3分钟科普短视频的全流程素材包，包含口播文案、分镜脚本、Veo2提示词、人物形象规范等，适配即梦平台视频生成。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "icon-generator",
+      "name": "icon-generator",
+      "description": "图标生成工具，根据描述或场景生成可用的图标素材，适用于产品界面、品牌与营销物料。",
+      "category": "其他技能"
+    },
+    {
+      "dirName": "infinitetalk",
+      "name": "infinitetalk",
+      "description": "音频驱动的稀疏帧视频配音工具，支持音频驱动的 Video-to-Video 和 Image-to-Video 生成，实现精准的唇形、头部、身体姿态同步，支持无限时长视频生成",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "infinitetalk-shopping-avatar",
+      "name": "infinitetalk-shopping-avatar",
+      "description": "专为InfiniteTalk项目设计的小省导购员数字人带货提示词生成技能，基于四大智能体协同（提示词生成师、质量管控师、知识库运维师、跨环节适配师），生成适配Image-to-Video模式的结构化提示词（角色固定特征+动作时序+场景环境+音频匹配+光影氛围+技术约束），支持9:16竖屏、5s/幕、音频同步（Suno+chinese-wav2vec2-base）、一致性管控（角色/视觉/情绪），直接对接模型推理流程",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "intelligent-content-system",
+      "name": "intelligent-content-system",
+      "description": "智能内容创作与发布全流程系统。根据用户需求自动识别场景， 编排调用网页采集、智能配图、小红书图文生成、热点内容创作、多平台发布等技能， 实现从内容获取到发布的一站式自动化。 支持场景： - 网页内容采集与再创作（采集→配图→发布） - 热点内容创作（热点采集→AI生成→多平台发布） - 原创内容优化（配图→小红书图文→发布） - 单一功能调用（采集/配图/图文/发布） 支持平台：微信公众号、小红书、X/Twitter、B站",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "legal-assistant-skills-main",
+      "name": "contract-review",
+      "description": "合同审阅技能：在不改动原文的前提下以批注形式标注问题，执行基础/商务/法律三层审查，输出结构化批注（问题类型、风险原因、修改建议），并以审阅者名称编码风险等级，可生成审查报告。",
+      "category": "法务与文档"
+    },
+    {
+      "dirName": "media-processor",
+      "name": "media-processor",
+      "description": "提供基于 FFmpeg 和 ImageMagick 的多媒体处理能力，支持视频和图像的格式转换、分辨率调整、压缩等操作",
+      "category": "其他技能"
+    },
+    {
+      "dirName": "moltbook",
+      "name": "moltbook",
+      "description": "AI Agent的社交网络. 发布帖子、评论、点赞和创建社区。当用户明确要求时才会使用，否则不会使用。",
+      "category": "智能体协作"
+    },
+    {
+      "dirName": "multi-agent-meeting",
+      "name": "multi-agent-meeting",
+      "description": "模拟多个AI智能体协作开会并进行决策讨论的场景。适用于需要从多个专业角度分析问题、进行辩论和达成共识的场景，如项目决策、技术方案评审、商业策略制定等。",
+      "category": "智能体协作"
+    },
+    {
+      "dirName": "nanobanana-ppt-visualizer",
+      "name": "nanobanana-ppt-visualizer",
+      "description": "PPT 视觉增强工具，支持多种风格渲染、交互式播放器生成和视频合成。可与 ppt-generator Skill 协同工作，实现从内容规划到视觉呈现的完整流程。",
+      "category": "PPT与演示"
+    },
+    {
+      "dirName": "obsidian-skills-integrated",
+      "name": "obsidian-skills-integrated",
+      "description": "Obsidian 笔记技能整合包，覆盖笔记整理、知识库构建与 Markdown 工作流，适用于个人知识管理与研报归档。",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "paper-analysis-assistant",
+      "name": "paper-analysis-assistant",
+      "description": "根据arXiv论文网址自动下载PDF并进行多维度分析，包括文本提取、词频分析、语音播报、播客对话生成、交互式网页、PPT、总结图和引用分析",
+      "category": "PPT与演示"
+    },
+    {
+      "dirName": "paper-to-patent",
+      "name": "paper-to-patent",
+      "description": "将科研论文、学位论文、技术报告与源代码整理为可追溯的中国发明专利初稿：建立证据台账、生成权利要求书/说明书/摘要与附图，输出 Word 可编辑公式与 DOCX 交付件（需代理师复核，非法律意见）。",
+      "category": "法务与文档"
+    },
+    {
+      "dirName": "pdf-processing-pro",
+      "name": "PDF Processing Pro",
+      "description": "生产级 PDF 处理：表单、表格、OCR、校验与批量操作。适用于复杂 PDF 流水线、大批量文档处理，以及需要稳健错误处理与校验的场景。",
+      "category": "其他技能"
+    },
+    {
+      "dirName": "pet-commerce-creator",
+      "name": "pet-commerce-creator",
+      "description": "萌宠带货短视频全流程创作技能，基于COZE视频大模型API，支持萌宠剧情/好物测评/品种科普/宠品带货等全类型创作，覆盖爆款解析反推、知识库联动、互动优化、素材批量下载、全素材整合，实现从创意到带货引流型成品视频的自动化生成，适配15-30秒竖屏9:16主流平台规格。",
+      "category": "电商与营销"
+    },
+    {
+      "dirName": "poetry-music-visual",
+      "name": "poetry-music-visual",
+      "description": "为古诗词提供配图与配乐的全流程创作指导；支持深度解析诗词意境、生成画面描述、提供配乐创作蓝图（Suno格式）；适用于诗词可视化、MV创作、文化传播等场景",
+      "category": "生活与创意"
+    },
+    {
+      "dirName": "pop-up-book-illustration",
+      "name": "pop-up-book-illustration",
+      "description": "生成3D纸艺弹出书风格插画，具备立体层次感、明亮温暖色调，适用于科技、教育、品牌展示等场景",
+      "category": "生活与创意"
+    },
+    {
+      "dirName": "ppt-generator",
+      "name": "ppt-generator",
+      "description": "基于七角色协作的智能 PPT 生成与优化工具。支持主题生成、模板推荐、内容填充、AI 智能配图、文本润色和 PPTX 文件生成。适用于学术汇报、商业演示、培训课件、产品发布等多种场景。",
+      "category": "PPT与演示"
+    },
+    {
+      "dirName": "ppt-roadshow-generator",
+      "name": "ppt-roadshow-generator",
+      "description": "PPT 路演视频全流程生成器，支持品牌风格学习、智能配音、音效音乐、字幕和一键视频合成。可一次性生成 15-100 页风格统一的完整路演视频。",
+      "category": "PPT与演示"
+    },
+    {
+      "dirName": "pptx-generator",
+      "name": "pptx-generator",
+      "description": "将 JSON 格式的 PPT 内容转换为标准的 .pptx 文件。使用 python-pptx 库，支持多种布局、图表、表格和样式。与 ppt-generator Skill 完全协同，可作为独立使用或与其他 PPT Skill 配合。",
+      "category": "PPT与演示"
+    },
+    {
+      "dirName": "product-manager-toolkit",
+      "name": "product-manager-toolkit",
+      "description": "产品经理综合工具包：RICE 优先级、用户访谈分析、PRD 模板、发现框架与 GTM 策略。适用于功能排期、用户研究归纳、需求文档与产品战略规划。",
+      "category": "产品与办公"
+    },
+    {
+      "dirName": "product-marketing-copywriter",
+      "name": "product-marketing-copywriter",
+      "description": "产品营销文案创作技能，支持多品类产品的吸引性营销文案生成，适用于产品推广、品牌营销、销售转化",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "product-video-creator",
+      "name": "product-video-creator",
+      "description": "多智能体协同的商品视频创作流水线，支持从商品信息到成视频的全流程创作：文案生成、故事策划、脚本创作、分镜设计、图片生成、字幕创作、音效推荐及视频合成；适用于电商商品宣传、品牌推广、社交媒体营销等场景",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "qiaomu-x-article-publisher",
+      "name": "x-article-publisher",
+      "description": "将 Markdown 文章发布到 X（Twitter）Articles 编辑器并保持格式。适用于用户说「发到 X」「Twitter 长文」「X 文章」或需要 X Premium 文章发布、封面图处理时。",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "qwen3-asr-assistant",
+      "name": "qwen3-asr-assistant",
+      "description": "智能语音转文字助手，基于 Qwen3-ASR 模型，支持实时语音识别和智能文本改写。可以将录音转换为文字，并一键改写成邮件、笔记、社交媒体文案，支持复制、分享和录音拼接。适用于会议纪要、语音备忘、内容创作等多种场景。",
+      "category": "语音与音频"
+    },
+    {
+      "dirName": "qwen3-tts-local",
+      "name": "qwen3-tts-local",
+      "description": "真正的本地语音合成服务，使用 Edge-TTS 引擎，零依赖、零配置、完全离线可用，支持多语言和多种音色",
+      "category": "语音与音频"
+    },
+    {
+      "dirName": "remotion-video-enhancer",
+      "name": "remotion-video-enhancer",
+      "description": "视频转场与动画增强工具，提取 Remotion 的动画理念，提供高级视频转场效果和 Framer Motion 交互式动画。可与 ppt-generator、nanobanana-ppt-visualizer、ppt-roadshow-generator Skill 协同工作。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "scrapling",
+      "name": "scrapling",
+      "description": "Scrapling 网页抓取：静态页 HTTP、JS 渲染、反爬与 Cloudflare 绕过；首次使用需联网 pip install 与浏览器组件下载（不随安装包内置）。",
+      "category": "自动化工具"
+    },
+    {
+      "dirName": "scipilot-cite",
+      "name": "scipilot-cite-skill",
+      "description": "SciPilot 文献引用技能：检索论文、按 APA/IEEE/GB-T 7714 等格式排版引用，插入 LaTeX/DOCX，并做防幻觉校验。",
+      "category": "学术写作与润色"
+    },
+    {
+      "dirName": "scipilot-writing",
+      "name": "scipilot-writing-skill",
+      "description": "SciPilot 学术论文写作与润色：中英互译、章节起草、逻辑检查、去 AI 味；交付前运行 writing_lint 机器自检 + 审稿人视角复核。",
+      "category": "学术写作与润色"
+    },
+    {
+      "dirName": "skill-development",
+      "name": "skill-development",
+      "description": "Anthropic 官方技能开发指南：SKILL.md 结构、描述优化、references/scripts 组织与插件集成。",
+      "category": "技能开发"
+    },
+    {
+      "dirName": "skills-best-practices",
+      "name": "skill-creator",
+      "description": "按 agentskills.io 规范撰写高质量 Agent 技能：元数据校验、目录结构、渐进式披露与脚本捆绑。",
+      "category": "技能开发"
+    },
+    {
+      "dirName": "stock-analysis",
+      "name": "stock-analysis",
+      "description": "股票个股分析，实时获取价格涨跌幅，计算技术指标和支撑位，识别缺口并判断支撑压力，智能预测未来3天走势并给出操作建议",
+      "category": "财务与投研"
+    },
+    {
+      "dirName": "tailored-resume-generator",
+      "name": "tailored-resume-generator",
+      "description": "分析岗位描述并生成定制简历，突出匹配经历、技能与成果，提高获得面试机会的概率。",
+      "category": "其他技能"
+    },
+    {
+      "dirName": "three-body-video-creator",
+      "name": "three-body-video-creator",
+      "description": "《三体》赛道AI视频创作工具,提供结构化的多智能体协作流程、素材生成与视频合成,涵盖选题深化、视觉设计、音频生成、视频制作全流程",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "tts-voice-synthesis",
+      "name": "tts-voice-synthesis",
+      "description": "智能语音合成服务，支持音色克隆、拟人化语义适配配音、流式实时生成、多语言与方言支持，提供 1.7B/0.6B 双模型选择",
+      "category": "语音与音频"
+    },
+    {
+      "dirName": "tyc-it",
+      "name": "tyc-it",
+      "description": "天眼查「天眼一下」企业数据：主体画像、股权实控、司法风险、经营真实性、知识产权与关联关系；需先安装 tyc-cli 并配置 API Key。",
+      "category": "企业数据与背调"
+    },
+    {
+      "dirName": "video-creation-collaborator",
+      "name": "video-creation-collaborator",
+      "description": "影品智创多智能体协同视频创作管理工具,提供11个智能体结构化分工、5阶段协同流程、质量管控标准与数据反馈机制,解决生图失真、视频合成瑕疵等问题,确保输出统一可控",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "video-creation-pro",
+      "name": "video-creation-pro",
+      "description": "10大智能体协同的商品视频创作系统，全流程质量闭环（创作→质检→反馈迭代），强制使用COZE视频大模型API进行视频合成，彻底移除本地依赖包逻辑，适用于智能硬件、美妆护肤、家居家电等多品类商品视频创作",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "video-creation-suite",
+      "name": "video-creation-suite",
+      "description": "完整的视频创作套件，支持原创创作、视频二创、视频分析三种模式，集成Coze Bot API、Edge-TTS、Suno API，涵盖多智能体协同、素材生成、视频合成全流程",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "video-frame-extractor",
+      "name": "video-frame-extractor",
+      "description": "视频反推工具,支持视频抽帧、视觉模型分析、提示词生成,适用于视频创作参考、内容提取、场景分析",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "video-recreation",
+      "name": "video-recreation",
+      "description": "完整的视频二创工具，支持视频反推、素材生成(图片/音效/背景音乐/配音/字幕)、视频合成、文件下载的全流程，集成Coze Bot API进行视觉分析，使用Edge-TTS进行语音合成",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "video-transcript-downloader",
+      "name": "video-transcript-downloader",
+      "description": "从 YouTube 及 yt-dlp 支持的其他站点下载视频、音频、字幕与分段正文稿。适用于「下载这个视频」「保存片段」「提取音频」「获取字幕/文稿」，或排查 yt-dlp/ffmpeg 格式与播放列表问题。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "viral-video-copywriting",
+      "name": "viral-video-copywriting",
+      "description": "专业的爆款短视频文案创作工具。通过对标抖音爆款视频，智能提取视频内容，深度拆解爆款因素，并结合用户需求创作出符合爆款规律的新文案。适用于短视频创作者、运营人员提升内容质量。",
+      "category": "视频创作"
+    },
+    {
+      "dirName": "web-design-analyzer",
+      "name": "web-design-analyzer",
+      "description": "分析网页截图，提取设计系统（Design System）并生成结构化数据和可用的 AI Coding Prompt。适用于 UI/UX 设计师和前端工程师需要从现有网页设计中提取设计规范、配色方案、排版系统和组件风格的场景。",
+      "category": "其他技能"
+    },
+    {
+      "dirName": "web-to-app",
+      "name": "web-to-app",
+      "description": "将任意网页转换为桌面应用，支持 macOS/Windows/Linux 三大平台。使用 Rust + Tauri 技术栈，生成的应用体积小（约 5MB）、性能高。支持自定义图标、窗口大小、快捷键等丰富配置。",
+      "category": "自动化工具"
+    },
+    {
+      "dirName": "wechat-hotspot-publisher",
+      "name": "wechat-hotspot-publisher",
+      "description": "智能采集热点话题，10分制筛选优质选题，AI生成爆款内容（标题/封面/标签/图片/HTML排版），支持素材上传和草稿箱发布，一键发布到微信公众号、小红书、B站等多平台",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "wechatsync-publisher",
+      "name": "wechatsync-publisher",
+      "description": "多平台内容发布助手，支持智能选题筛选、AI生成优质内容、一键发布到微信公众号等平台；支持内容格式自动适配（HTML/Markdown/纯文本）",
+      "category": "内容创作与发布"
+    },
+    {
+      "dirName": "xiaohongshu-makeup",
+      "name": "xiaohongshu-makeup",
+      "description": "小红书美妆内容创作技能，支持笔记生成、笔记优化、文生图描述创作；适用于美妆护肤产品的内容创作、测评和营销推广",
+      "category": "电商与营销"
+    }
+  ]
+}

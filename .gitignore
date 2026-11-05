@@ -1,0 +1,43 @@
+# 依赖与构建产物
+node_modules/
+dist/
+dist-ssr/
+target/
+src-tauri/target/
+src-tauri/gen/
+*.local
+
+# 打包产物（体积大，走 Releases 而不是仓库）
+releases/
+*.zip
+*.msi
+*.wixpdb
+*.wixobj
+src-tauri/bundled/
+
+# 日志与临时目录
+*.log
+.tmp*
+cad_mcp.log
+release-build-*.log
+
+# 凭据与本机配置（永远不要提交）
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+openclaw-data/
+data/
+
+# 编辑器 / 系统
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# 缓存
+__pycache__/
+*.pyc
+.eslintcache
