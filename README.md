@@ -132,8 +132,8 @@ npm run test:rust
 
 ## 版权与许可
 
-本项目由作者独立设计与开发。著作权归 **深圳市浩淼云图信息科技有限公司** 所有，经授权以 [MIT](LICENSE) 协议开源。
+本项目由作者独立设计与开发。著作权归 **深圳市浩瀚云图信息科技有限责任公司** 所有，经授权以 [MIT](LICENSE) 协议开源。
 
 ```
-Copyright (c) 2026 Shenzhen Haomiao Yuntu Information Technology Co., Ltd.
+Copyright (c) 2026 Shenzhen Haohan Yuntu Information Technology Co., Ltd.
 ```
